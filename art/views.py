@@ -1,3 +1,6 @@
+from django.http import Http404, HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
+# Views
+def index(request):
+    return HttpResponse("Test");
