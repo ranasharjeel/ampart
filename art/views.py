@@ -6,4 +6,5 @@ from . import spotify_auth
 def index(request):
     sp = spotify_auth.attemptAuth()
     print(sp)
+    
     return render(request, 'index.html', {})

@@ -1,6 +1,7 @@
+import os
 import spotipy
 from spotipy import oauth2
-import os
+from . import errors
 
 CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
@@ -48,4 +49,4 @@ def attemptAuth():
         
     
     else:
-        return "[ERROR] Access token unavailable."
+        return errors.couldNotAuthenticate()
