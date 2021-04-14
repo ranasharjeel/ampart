@@ -6,8 +6,13 @@ from . import spotify_auth, errors
 def index(request):
     # Spotify data
     sp = spotify_auth.getSpotifyObj()
+
+    # Get top tracks of the user 
+    top_tracks_list = []
     if(sp != errors.couldNotAuthenticate()):
-        print(sp.current_user())
+        top_tracks = sp.current_user_top_tracks(10).get('items')
 
+        for i in top_tracks:
+            top_tracks_list.append(i['name'])
 
-    return render(request, 'index.html', {})
+    return render(request, 'index.html', {'top_tracks_list' : top_tracks_list})
