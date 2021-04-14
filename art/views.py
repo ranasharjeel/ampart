@@ -2,7 +2,12 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import render
 from . import spotify_auth, errors
 
-# Views
+'''
+    ----Views----
+'''
+
+
+# Index page
 def index(request):
     # Spotify data
     sp = spotify_auth.getSpotifyObj()
@@ -14,5 +19,11 @@ def index(request):
 
         for i in top_tracks:
             top_tracks_list.append(i['name'])
-
+    
     return render(request, 'index.html', {'top_tracks_list' : top_tracks_list})
+
+
+# Playback page
+def play(request):
+    
+    return render(request, 'play.html', {})

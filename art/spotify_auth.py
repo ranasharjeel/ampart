@@ -7,7 +7,7 @@ CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
 REDIRECT_URI = "http://localhost:8888/"
 CACHE = ".ampartcache"
-SCOPE = "user-library-read user-top-read"
+SCOPE = "user-library-read user-top-read user-read-currently-playing"
 
 
 
