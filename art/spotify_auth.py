@@ -11,6 +11,11 @@ SCOPE = "user-library-read user-top-read"
 
 
 
+'''
+    Attempts to authorize user and getting access token
+    Access token will allow access to spotify user data (within scopes)
+    Caches the access token, if not already cached
+'''
 def attemptAuth():
         
     # Create authorization request
@@ -44,9 +49,20 @@ def attemptAuth():
     # Return access token if it's available
     if access_token != "":
         print("Access token available.")
+        return access_token
         
-        return spotipy.Spotify(access_token)
-        
-    
     else:
-        return errors.couldNotAuthenticate()
+        return errors.noAccessToken(True)
+
+
+'''
+    Authorize user and return spotify data access object
+'''
+def getSpotifyObj():
+    # Return spotify obj if authorization is successful
+    access_token = attemptAuth()
+    if access_token != errors.noAccessToken():
+        return spotipy.Spotify(access_token)
+
+    else:
+        return errors.couldNotAuthenticate(True)
