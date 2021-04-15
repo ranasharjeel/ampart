@@ -13,14 +13,15 @@ def index(request):
     sp = spotify_auth.getSpotifyObj()
 
     # Get top tracks of the user 
-    top_tracks_list = []
+    top_artists_list = []
     if(sp != errors.couldNotAuthenticate()):
-        top_tracks = sp.current_user_top_tracks(10).get('items')
+        top_artists = sp.current_user_top_artists(20).get('items')
 
-        for i in top_tracks:
-            top_tracks_list.append(i['name'])
+        for i in top_artists:
+            
+            top_artists_list.append(i['name'])
     
-    return render(request, 'index.html', {'top_tracks_list' : top_tracks_list})
+    return render(request, 'index.html', {'top_artists_list' : top_artists_list})
 
 
 # Playback page
