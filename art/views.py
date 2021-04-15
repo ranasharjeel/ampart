@@ -15,14 +15,14 @@ def index(request):
     # Get top artist of the user 
     top_artists_list = []
     if(sp != errors.couldNotAuthenticate()):
-        top_artists = sp.current_user_top_artists(20).get('items')
+        top_artists = sp.current_user_top_artists(50).get('items')
 
         for i in top_artists:
             top_artists_list.append(i['name'])
     
     # Generate word cloud from top artist names
     cloud.generateWordCloud(top_artists_list)
-    
+
     return render(request, 'index.html', {'top_artists_list' : top_artists_list})
 
 
