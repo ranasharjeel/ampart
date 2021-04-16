@@ -1,5 +1,35 @@
 <h1>Stats</h1>
 
 {% load static %}
-<img src="{% static 'artists.png' %}" />
-<img src="{% static 'genres.png' %}" width="600" height="600"/>
+
+<head>
+    <style>
+        .img-overlay{
+            position: relative;
+            display: inline-block;
+            transition: transform 150ms ease-in-out;
+        }
+        .outline{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .content{
+            position:absolute;
+            top: 0;
+            left: 0;
+        }
+        .img-overlay:hover{
+            transform: rotate(15deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="img-overlay">
+        <img class="content" src="{% static 'note.svg' %}" />
+        <img class="outline" src="{% static 'artists.png' %}" />
+
+    </div>
+</body>

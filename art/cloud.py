@@ -19,8 +19,8 @@ def generateWordCloud(word_list, mask_name, out_name):
     wc = WordCloud(
         background_color='white',
         mask=custom_mask,
-        contour_width=20,
-        contour_color='black',
+        #contour_width=20,
+        #contour_color='black',
         color_func=img_colors
     ).generate_from_frequencies(words)
 
