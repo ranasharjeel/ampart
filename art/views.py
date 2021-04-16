@@ -33,7 +33,7 @@ def index(request):
 
     # Generate word cloud from top artist/genres names
     cloud.generateWordCloud(top_artists_list, "note", "artists")
-    cloud.generateWordCloud(top_genres_list, "single", "genres")
+    cloud.generateWordCloud(top_genres_list, "single_out", "genres")
 
     return render(request, 'index.html')
 

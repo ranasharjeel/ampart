@@ -19,11 +19,17 @@ def generateWordCloud(word_list, mask_name, out_name):
     wc = WordCloud(
         background_color='white',
         mask=custom_mask,
-        contour_width=10,
+        contour_width=20,
         contour_color='black',
         color_func=img_colors
     ).generate_from_frequencies(words)
 
+    '''
+    svg = wc.to_svg()
+    f = open("testttt.svg", "w+")
+    f.write(svg)
+    f.close()
+    '''
 
     # Output wordcloud to assets
     wc.to_file(OUT_PATH)
