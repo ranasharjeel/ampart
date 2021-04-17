@@ -24,12 +24,9 @@ def generateWordCloud(word_list, mask_name, out_name):
         color_func=img_colors
     ).generate_from_frequencies(words)
 
-    '''
+    
     svg = wc.to_svg()
-    f = open("testttt.svg", "w+")
-    f.write(svg)
-    f.close()
-    '''
+    print(svg)
 
     # Output wordcloud to assets
     wc.to_file(OUT_PATH)
