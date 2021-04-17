@@ -6,9 +6,11 @@ from wordcloud import WordCloud, ImageColorGenerator
 
 def generateWordCloud(word_list, mask_name, out_name):
     # Output path
-    OUT_PATH = "static/"+out_name+".png";
+    OUT_PATH = "static/"+out_name+".svg";
     # Mask path
-    IMG_PATH = "static/" + mask_name + ".png";
+    IMG_PATH = "static/" + mask_name + "-mask" + ".png";
+    # Outline path
+    BORDER_PATH = "static/" + mask_name + "-outline" + ".svg";
 
     words = Counter(word_list)
     im = Image.open(IMG_PATH).convert("RGB")
@@ -21,12 +23,28 @@ def generateWordCloud(word_list, mask_name, out_name):
         mask=custom_mask,
         #contour_width=20,
         #contour_color='black',
+        
         color_func=img_colors
     ).generate_from_frequencies(words)
 
     
-    svg = wc.to_svg()
-    print(svg)
+    # Convert to SVG and get body only (remove svg tags)
+    svg_str = wc.to_svg().splitlines()
+    del svg_str[-1]
+    del svg_str[0]
+    svg_str = '\n'.join(svg_str)
 
-    # Output wordcloud to assets
-    wc.to_file(OUT_PATH)
+    # Load in outline SVG and merge word cloud body with outline
+    # <cloud/> is a placeholder in the outlines to replace with the body
+    border_file = open(BORDER_PATH, "r")
+    border = border_file.read()
+    border_file.close()
+
+    # Merge word cloud body for final result
+    result = border.replace('<cloud/>', svg_str)
+    
+
+    # Output wordcloud and border to assets
+    out_file = open(OUT_PATH, "w")
+    out_file.write(result)
+    out_file.close()
