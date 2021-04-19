@@ -1,14 +1,57 @@
-<h1>Stats</h1>
-
 {% load static %}
+<!-- <img src="{% static 'assets/genres.svg' %}" width="600" height="600"/> -->
 
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'index/main.css' %}"/>
+    <script src="{% static 'index/general.js' %}"></script>
 </head>
-
 <body>
     
+    <header>
+        <!-- Logo -->
+        <span class="ghost">Test</span>
+        <div class="logo">
+            <h1>Ampart</h1>
+        </div>
 
-    <img src="{% static 'artists.svg' %}" width="600" height="600"/>
-    <img src="{% static 'genres.svg' %}" width="600" height="600"/>
+        <!-- Small menu -->
+        <div class="ham-menu">
+            <img src="{% static 'site-assets/menu.svg' %}" alt="">
+        </div>
+    </header>
+
+    <!-- Main body -->
+
+    <div id="note-container" class="main">
+        <div class="title-container">
+            <div class="title">
+                <h1>Generate <span>art</span> <br/> based on <br/>your <span>favorite</span> music.</h1>
+            
+            </div>
+            <div class="btn-container">
+                <button class="index-btn explore-btn">Explore</button>
+                <button class="index-btn login-btn" onmouseover="hover();" onmouseout="unhover()"><img id="spotify-logo" src="{% static 'site-assets/spotify-light.png' %}" width="23px" height="23px" /> <span>Log In</span></button>
+            </div>
+        </div>
+        <div class="cover-art">
+            <img src="{% static 'site-assets/artists.svg' %}" width="640px" height="640px"/>
+
+        </div>
+    </div>
+
+    
+    <!-- Scripts -->
+    <script src="{% static 'index/note-anim.js' %}"></script>
+    
     
 </body>
+</html>

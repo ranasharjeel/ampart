@@ -6,11 +6,11 @@ from wordcloud import WordCloud, ImageColorGenerator
 
 def generateWordCloud(word_list, mask_name, out_name):
     # Output path
-    OUT_PATH = "static/"+out_name+".svg";
+    OUT_PATH = "static/assets/"+out_name+".svg";
     # Mask path
-    IMG_PATH = "static/" + mask_name + "-mask" + ".png";
+    IMG_PATH = "static/assets/" + mask_name + "-mask" + ".png";
     # Outline path
-    BORDER_PATH = "static/" + mask_name + "-outline" + ".svg";
+    BORDER_PATH = "static/assets/" + mask_name + "-outline" + ".svg";
 
     words = Counter(word_list)
     im = Image.open(IMG_PATH).convert("RGB")
@@ -21,9 +21,6 @@ def generateWordCloud(word_list, mask_name, out_name):
     wc = WordCloud(
         background_color='white',
         mask=custom_mask,
-        #contour_width=20,
-        #contour_color='black',
-        
         color_func=img_colors
     ).generate_from_frequencies(words)
 

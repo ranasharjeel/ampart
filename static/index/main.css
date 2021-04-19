@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?ng9n5v');
+    src:  url('fonts/icomoon.eot?ng9n5v#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?ng9n5v') format('truetype'),
+      url('fonts/icomoon.woff?ng9n5v') format('woff'),
+      url('fonts/icomoon.svg?ng9n5v#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-mu3:before {
+    content: "\74";
+  }
+  .icon-mu2:before {
+    content: "\73";
+  }
+  .icon-mu1:before {
+    content: "\64";
+  }
+
+.icon-treble{
+  z-index: -1;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@-ms-viewport{
+  width: device-width;
+}
+
+@viewport{
+  zoom: 1.0;
+  width: device-width;
+}
+
+/* ------------------VARIABLES------------------*/
+:root{
+    --lightbg : #F9F5F1;
+    --darkbg : #EDE0D4;
+    --btnclr : #1D1D1D;
+    --iconclr : rgba(39, 39, 39, 0.295);
+    --btnlight : rgb(255, 255, 255);
+}
+
+html{
+  height: 100vh;
+}
+body{
+    background-color: var(--darkbg);
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+
+
+    /* font-family: 'Amatic SC', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* HEADER */
+/* ======================================== */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+
+    margin: 2vh 0;
+}
+
+.logo h1{
+    /* background-color: grey; */
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    
+}
+
+.ham-menu{
+    /* background-color: red; */
+
+}
+.ghost{
+  visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================== */
+
+
+
+/* MAIN CONTENT */
+/* ======================================== */
+
+.main{
+  background-color: var(--lightbg);
+  flex-grow: 1;
+  margin-bottom: 5vh;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cover-art{
+  display:none;
+}
+.title-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.title{
+  z-index: 200;
+  opacity: 0;
+  animation: 3s ease-out 0s 1 fadeInTitle forwards;
+}
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.title h1{
+  margin: 0 10%;
+  text-align: center;
+  font-weight: 400;
+}
+.title h1 span{
+  font-weight: 700;
+}
+
+/* Buttons and their animations */
+.index-btn{
+  all:unset;
+  z-index: 200;
+  color: white;
+  background-color: var(--btnclr);
+  width: 93px;
+  height: 31px;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 5vh 0 0 0;
+  padding: 0 0.75rem;
+  border: 2px solid var(--btnclr);
+  opacity: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  transition: 0.3s ease;
+  animation: 1s ease-out 2s 1 fadeInButtons forwards;
+}
+/* Fade in buttons on page load */
+@keyframes fadeInButtons{ 
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+/* Hover effects */
+.index-btn:hover{
+  color: var(--btnclr);
+  background-color : var(--btnlight);
+  border-color : var(--btnclr);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* ======================================== */
+
+.icon-treble{
+    animation: fall 20s linear forwards;
+    color: var(--iconclr);
+    z-index: 2;
+    
+}
+/* Falling notes animation */
+@keyframes fall { 
+    to{
+        transform: translateY(105vh);
+    }
+}
+
+
+
+
+/* ======================================== */
+/* DESKTOP */
+/* ======================================== */
+
+@media screen and (min-width: 1025px) {
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  /* Display the cover art */
+  .cover-art{
+    display: block;
+    
+    /* background-color: green; */
+  }
+  /* Space around to allow room for the cover art */
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* Make buttons sit next to eachother */
+  .btn-container{
+    display: flex;
+    flex-direction: row;
+  }
+  /* Space them a bit */
+  .index-btn.explore-btn{
+    margin-right: 2vw;
+  }
+
+  .title-container{
+    
+    padding: 10vh 0;
+    /* background-color: lightblue; */
+  }
+  
+  
+  
+}
+
+
+/* ======================================== */
