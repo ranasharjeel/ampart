@@ -31,10 +31,12 @@ spotify_login_button.addEventListener("click", spotifyAuth);
 const auth_data = JSON.parse(spotify_login_button.getAttribute("value"));
 
 // GET request sent here
-const SPOTIFY_AUTHORIZE_URL = "https://accounts.spotify.com/authorize";
+const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 
+
+// Send request and get auth code
 function spotifyAuth(){
-    let request = SPOTIFY_AUTHORIZE_URL;
+    let request = AUTH_ENDPOINT;
     request += "?client_id=" + auth_data['CLIENT_ID'];
     request += "&response_type=code";
     request += "&redirect_uri=" + auth_data['REDIRECT_URI'];
