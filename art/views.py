@@ -1,3 +1,4 @@
+import os
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
 from . import spotify_auth, errors, cloud
@@ -9,6 +10,7 @@ from . import spotify_auth, errors, cloud
 
 # Index page
 def index(request):
+    '''
     # Spotify data
     sp = spotify_auth.getSpotifyObj()
 
@@ -34,11 +36,25 @@ def index(request):
     # Generate word cloud from top artist/genres names
     cloud.generateWordCloud(top_artists_list, "note", "artists")
     cloud.generateWordCloud(top_genres_list, "single", "genres")
+    '''
 
-    return render(request, 'index.html')
+    # Pass data required for authorization if user wants to login
+    CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
+    CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
+    REDIRECT_URI = "http://127.0.0.1:8000/auth.html"
+    SCOPE = "user-library-read user-top-read"
+
+    auth_data = {
+        "CLIENT_ID" : CLIENT_ID,
+        "CLIENT_SECRET" : CLIENT_SECRET,
+        "REDIRECT_URI" : REDIRECT_URI,
+        "SCOPE" : SCOPE
+    }
+
+    return render(request, 'index.html', auth_data)
 
 
-# Playback page
-def play(request):
+# Authorization page
+def auth(request):
     
-    return render(request, 'play.html', {})
+    return render(request, 'auth.html', {})

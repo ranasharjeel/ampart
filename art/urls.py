@@ -5,5 +5,5 @@ app_name='art'
 
 urlpatterns=[
     path('', views.index, name='index'),
-    path('play/', views.play, name='play')
+    path('auth/', views.auth, name='auth')
 ]

@@ -1,3 +1,7 @@
+'''
+    DEPRECATED - Remove in final build
+'''
+
 import os
 import spotipy
 from spotipy import oauth2
@@ -7,8 +11,7 @@ CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
 REDIRECT_URI = "http://localhost:8888/"
 CACHE = ".ampartcache"
-SCOPE = "user-library-read user-top-read user-read-currently-playing"
-
+SCOPE = "user-library-read user-top-read"
 
 
 '''
@@ -17,16 +20,16 @@ SCOPE = "user-library-read user-top-read user-read-currently-playing"
     Caches the access token, if not already cached
 '''
 def attemptAuth():
-        
     # Create authorization request
     sp = oauth2.SpotifyOAuth(
         client_id=CLIENT_ID,
         client_secret=CLIENT_SECRET,
         redirect_uri=REDIRECT_URI,
         scope=SCOPE,
-        cache_path=CACHE
+        cache_path=CACHE,
+        show_dialog=True
     )
-
+    
     access_token = ""
 
     # Get cached token if it exists
