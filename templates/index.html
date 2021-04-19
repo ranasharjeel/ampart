@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{% static 'index/main.css' %}"/>
-    <script src="{% static 'index/general.js' %}"></script>
+    
 </head>
 <body>
     
@@ -41,9 +41,11 @@
 
                 <button class="index-btn explore-btn">Explore</button>
 
-                <button class="index-btn login-btn" onmouseover="hover();" onmouseout="unhover()">
+                <button id="spotify-login-btn" class="index-btn login-btn" value="{{auth_data}}">
+
                     <img id="spotify-logo" src="{% static 'site-assets/spotify-light.png' %}" width="23px" height="23px" /> 
                     <span>Log In</span>
+                
                 </button>
 
 
@@ -58,6 +60,7 @@
     
     <!-- Scripts -->
     <script src="{% static 'index/note-anim.js' %}"></script>
+    <script src="{% static 'index/index-general.js' %}"></script>
     
     
 </body>

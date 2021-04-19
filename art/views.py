@@ -1,7 +1,7 @@
-import os
+import os, json
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
-from . import spotify_auth, errors, cloud
+
 
 '''
     ----Views----
@@ -43,18 +43,19 @@ def index(request):
     CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
     REDIRECT_URI = "http://127.0.0.1:8000/auth.html"
     SCOPE = "user-library-read user-top-read"
-
+    
     auth_data = {
-        "CLIENT_ID" : CLIENT_ID,
-        "CLIENT_SECRET" : CLIENT_SECRET,
-        "REDIRECT_URI" : REDIRECT_URI,
-        "SCOPE" : SCOPE
+        'CLIENT_ID' : CLIENT_ID,
+        'CLIENT_SECRET' : CLIENT_SECRET,
+        'REDIRECT_URI' : REDIRECT_URI,
+        'SCOPE' : SCOPE
     }
 
-    return render(request, 'index.html', auth_data)
+    auth_data_json = json.dumps(auth_data)
+    return render(request, 'index.html', {'auth_data' : auth_data_json})
 
 
 # Authorization page
 def auth(request):
-    
+    print("Hello World")
     return render(request, 'auth.html', {})
