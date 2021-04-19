@@ -38,24 +38,30 @@ def index(request):
     cloud.generateWordCloud(top_genres_list, "single", "genres")
     '''
 
-    # Pass data required for authorization if user wants to login
+
+
+    # Get data required for authorization if user wants to login
     CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
     CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
-    REDIRECT_URI = "http://127.0.0.1:8000/auth.html"
+    REDIRECT_URI = "http://127.0.0.1:8000/art/auth"
     SCOPE = "user-library-read user-top-read"
     
+
+    # Package data to JSON and send to index template
     auth_data = {
         'CLIENT_ID' : CLIENT_ID,
         'CLIENT_SECRET' : CLIENT_SECRET,
         'REDIRECT_URI' : REDIRECT_URI,
         'SCOPE' : SCOPE
     }
+    auth_data = json.dumps(auth_data)
 
-    auth_data_json = json.dumps(auth_data)
-    return render(request, 'index.html', {'auth_data' : auth_data_json})
+
+    return render(request, 'index.html', {'auth_data' : auth_data})
 
 
 # Authorization page
 def auth(request):
     print("Hello World")
+    print(request)
     return render(request, 'auth.html', {})
