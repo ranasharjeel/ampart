@@ -1,8 +1,11 @@
 
 function hover(){
-    document.getElementById("spotify-logo").src = "/assets/spotify-dark.png"
+    var img = document.getElementById("spotify-logo");
+    var new_src = img.getAttribute("src").replace("light", "dark");
+    img.setAttribute("src", new_src);
 }
 function unhover(){
-    
-    document.getElementById("spotify-logo").src = "/assets/spotify-light.png"
+    var img = document.getElementById("spotify-logo");
+    var new_src = img.getAttribute("src").replace("dark","light");
+    img.setAttribute("src", new_src);
 }
