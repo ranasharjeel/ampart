@@ -1,4 +1,4 @@
-import os, json
+import os, json, requests
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
 
@@ -67,19 +67,22 @@ def auth(request):
     # authorization code
     auth_code = request.GET['code'] 
 
-    # base 64 encoded client id/secret
-    creds = f"{CLIENT_ID}:{CLIENT_SECRET}"
-    creds.encode();
+    endpoint = "https://accounts.spotify.com/api/token"
 
-
-    # Package data to JSON and send to auth template
-    # (to get access and refresh tokens + additional tokeninfo)
-    token_data = {
-        'CODE' : auth_code,
-        'REDIRECT_URI' : REDIRECT_URI,
-        'ENCODED_CREDS' : creds 
+    body = {
+        "grant_type" : "authorization_code",
+        "code" : auth_code,
+        "redirect_uri" : REDIRECT_URI
     }
-    token_data = json.dumps(token_data)
 
+    r = requests.post(endpoint, data=body, auth=(CLIENT_ID,CLIENT_SECRET))
 
-    return render(request, 'auth.html', {'token_data' : token_data})
+    
+    print("==============CONTENT================")
+    print(body)
+    print(r.status_code)
+    print(r.content)
+    print("==============CONTENT================")
+    
+
+    return render(request, 'auth.html', {})
