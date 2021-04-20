@@ -1,7 +1,6 @@
 import os, json, requests
-from django.http import Http404, HttpResponse
 from django.shortcuts import render
-from . import errors
+from . import errors, spotify
 
 '''
     ----Views----
@@ -13,11 +12,6 @@ CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
 REDIRECT_URI = "http://127.0.0.1:8000/art/auth"
 SCOPE = "user-library-read user-top-read"
-
-# Access/Refresh tokens
-ACCESS_TOKEN = ""
-REFRESH_TOKEN = ""
-
 
 
 # Index page
@@ -87,21 +81,14 @@ def auth(request):
     if r.status_code == 200:
         # Get response and set access/refresh tokens
         content = r.json()
-        ACCESS_TOKEN = content['access_token']
-        REFRESH_TOKEN = content['refresh_token']
+        spotify.ACCESS_TOKEN = content['access_token']
+        spotify.REFRESH_TOKEN = content['refresh_token']
         
     else:
         errors.badRequest(True)
         
 
     # TEMP - Testing out web API queries
-    endpoint = "https://api.spotify.com/v1/me/top/artists"
-    header = {
-        "Authorization" : "Bearer {token}".format(token=ACCESS_TOKEN)
-    }
-    r = requests.get(endpoint, headers=header)
-    
-    r = r.json()
-    
-    print(r)
+    print(spotify.getTopArtists())
+
     return render(request, 'auth.html', {})
