@@ -1,7 +1,7 @@
-import os, json, requests
+import os, json, requests, ast
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
-
+from . import errors
 
 '''
     ----Views----
@@ -14,6 +14,9 @@ CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
 REDIRECT_URI = "http://127.0.0.1:8000/art/auth"
 SCOPE = "user-library-read user-top-read"
 
+# Access/Refresh tokens
+ACCESS_TOKEN = ""
+REFRESH_TOKEN = ""
 
 # Index page
 def index(request):
@@ -67,6 +70,7 @@ def auth(request):
     # authorization code
     auth_code = request.GET['code'] 
 
+    # Create and send post request for access/refresh tokens
     endpoint = "https://accounts.spotify.com/api/token"
 
     body = {
@@ -76,13 +80,17 @@ def auth(request):
     }
 
     r = requests.post(endpoint, data=body, auth=(CLIENT_ID,CLIENT_SECRET))
+    
 
-    
-    print("==============CONTENT================")
-    print(body)
-    print(r.status_code)
-    print(r.content)
-    print("==============CONTENT================")
-    
+    if r.status_code == 200:
+        # Decode response and set tokens
+        content = r.content.decode("UTF-8")
+        content = ast.literal_eval(content)
+        ACCESS_TOKEN = content['access_token']
+        REFRESH_TOKEN = content['refresh_token']
+        
+    else:
+        errors.badRequest(True)
+        
 
     return render(request, 'auth.html', {})

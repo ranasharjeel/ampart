@@ -15,3 +15,10 @@ def couldNotAuthenticate(call_error=False):
     if call_error:
         print("[ERROR] Could not authorize user")
     return 1102
+
+
+# Bad request error
+def badRequest(call_error=False):
+    if call_error:
+        print("[ERROR] Bad request")
+    return 1103
