@@ -1,6 +1,6 @@
 import os, json, requests
 from django.shortcuts import render
-from . import errors, spotify
+from . import errors, spotify, cloud
 
 '''
     ----Views----
@@ -88,7 +88,14 @@ def auth(request):
         errors.badRequest(True)
         
 
-    # TEMP - Testing out web API queries
-    print(spotify.getTopArtists())
 
+
+    # TEMP - Testing out web API queries
+    top_artists = spotify.getTopArtists()
+    top_genres = spotify.getTopGenres()
+
+    # Generate word cloud from top artist/genres names
+    cloud.generateWordCloud(top_artists, "note", "artists")
+    cloud.generateWordCloud(top_genres, "single", "genres")
+    
     return render(request, 'auth.html', {})
