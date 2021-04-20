@@ -1,4 +1,4 @@
-import os, json, requests, ast
+import os, json, requests
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
 from . import errors
@@ -17,6 +17,8 @@ SCOPE = "user-library-read user-top-read"
 # Access/Refresh tokens
 ACCESS_TOKEN = ""
 REFRESH_TOKEN = ""
+
+
 
 # Index page
 def index(request):
@@ -83,9 +85,8 @@ def auth(request):
     
 
     if r.status_code == 200:
-        # Decode response and set tokens
-        content = r.content.decode("UTF-8")
-        content = ast.literal_eval(content)
+        # Get response and set access/refresh tokens
+        content = r.json()
         ACCESS_TOKEN = content['access_token']
         REFRESH_TOKEN = content['refresh_token']
         
@@ -93,4 +94,14 @@ def auth(request):
         errors.badRequest(True)
         
 
+    # TEMP - Testing out web API queries
+    endpoint = "https://api.spotify.com/v1/me/top/artists"
+    header = {
+        "Authorization" : "Bearer {token}".format(token=ACCESS_TOKEN)
+    }
+    r = requests.get(endpoint, headers=header)
+    
+    r = r.json()
+    
+    print(r)
     return render(request, 'auth.html', {})
