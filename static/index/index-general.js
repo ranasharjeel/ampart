@@ -20,6 +20,34 @@ function unhover(){
 
 
 /*
+    Hamburger menu toggle
+*/
+let toggle = 0;
+document.getElementById("ham").addEventListener("click", openMenu);
+
+function openMenu(){
+    
+    if(toggle==0){
+        document.getElementById("mainmenu").style.display = "block";
+        document.getElementById("backdrop").style.display = "block"
+        var ham = document.getElementById("ham-img");
+        var new_src = ham.getAttribute("src").replace("menu","cross");
+        ham.setAttribute("src", new_src)
+        toggle=1;
+    }
+    else{
+        document.getElementById("mainmenu").style.display = "none";
+        document.getElementById("backdrop").style.display = "none";
+        var ham = document.getElementById("ham-img");
+        var new_src = ham.getAttribute("src").replace("cross","menu");
+        ham.setAttribute("src", new_src)
+        toggle=0;
+    }
+}
+
+
+
+/*
   ----SPOTIFY AUTHORIZATION----
   Use authorization data from index view to authenticate user
 */

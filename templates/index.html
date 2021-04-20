@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    
+    <div id="backdrop" class="back-drop"></div>
     <header>
         <!-- Logo -->
         <span class="ghost">Test</span>
@@ -23,10 +23,21 @@
             <h1>Ampart</h1>
         </div>
 
-        <!-- Small menu -->
-        <div class="ham-menu">
-            <img src="{% static 'site-assets/menu.svg' %}" alt="">
+        <!-- Mobile menu -->
+        <div id="ham" class="ham-menu">
+            <img id="ham-img" src="{% static 'site-assets/ham-menu.svg' %}" alt="">
         </div>
+
+        <!-- Desktop menu -->
+        <div id="mainmenu" class="main-menu">
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </div>
+
+
     </header>
 
     <!-- Main body -->
