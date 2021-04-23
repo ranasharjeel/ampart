@@ -8,9 +8,14 @@
     <title>Authorization</title>
 </head>
 <body>
-    <h1>Authorization Page</h1>
-    <img src="{% static 'assets/artists.svg' %}" width="600px" height="600px"/>
-    <img src="{% static 'assets/genres.svg' %}" width="600px" height="600px"/>
-    
+    <h1>{{status}}</h1>
+    <h1 id="auth" value="{{status}}"></h1>
+
+    <script>
+        
+        status = document.getElementById("auth").getAttribute("value");
+        
+
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 import os, json, requests
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from . import errors, spotify, cloud
 
 '''
@@ -16,7 +16,17 @@ SCOPE = "user-library-read user-top-read"
 
 # Index page
 def index(request):
-
+    
+    error = 0 # No errors logged initially
+    # Check for session errors, set and delete if present
+    try:
+        error = request.session['err']
+        del request.session['err']
+    
+    except:
+        pass
+    print("ERROR CODE: ", error)
+    
     # Package data to JSON and send to index template
     # (to get authorization code on login click)
     auth_data = {
@@ -28,14 +38,22 @@ def index(request):
     auth_data = json.dumps(auth_data)
 
 
-    return render(request, 'index.html', {'auth_data' : auth_data})
+    return render(request, 'index.html', {'auth_data' : auth_data, 'error' : error})
 
 
 # Authorization page
 def auth(request):
+    
 
-    # authorization code
-    auth_code = request.GET['code'] 
+    auth_code = ""
+    
+    try:
+        # authorization code
+        auth_code = request.GET['code'] 
+    except:
+        request.session['err'] = errors.couldNotAuthenticate()
+        return redirect('art:index')
+
 
     # Create and send post request for access/refresh tokens
     endpoint = "https://accounts.spotify.com/api/token"
@@ -55,12 +73,14 @@ def auth(request):
         spotify.ACCESS_TOKEN = content['access_token']
         spotify.REFRESH_TOKEN = content['refresh_token']
         
-    else:
+    else: # failed to get access/refresh tokens
         errors.badRequest(True)
+        return redirect('/art/')
+        
         
 
 
-
+    '''
     # TEMP - Testing out web API queries
     top_artists = spotify.getTopArtists()
     top_genres = spotify.getTopGenres()
@@ -68,5 +88,7 @@ def auth(request):
     # Generate word cloud from top artist/genres names
     cloud.generateWordCloud(top_artists, "note", "artists")
     cloud.generateWordCloud(top_genres, "single", "genres")
-    
-    return render(request, 'auth.html', {})
+    '''
+
+
+    return render(request, 'auth.html', {'status' : r.status_code})

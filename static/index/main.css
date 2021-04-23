@@ -246,7 +246,12 @@ border-color : var(--btnclr);
 cursor: pointer;
 }
 
-
+/* Login failed error msg */
+#login-fail-msg{
+  margin-top: 5vh;
+  visibility: hidden;
+  
+}
 
 
 

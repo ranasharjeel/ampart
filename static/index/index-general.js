@@ -46,6 +46,17 @@ function openMenu(){
 }
 
 
+/* Display error if failed to login */
+const error_msg = document.getElementById("login-fail-msg");
+const error_code = error_msg.getAttribute("value");
+
+if(error_code!=0){
+    error_msg.style.visibility = 'visible';
+}
+else{
+    error_msg.style.visibility = 'hidden';
+}
+
 
 /*
   ----SPOTIFY AUTHORIZATION----
@@ -71,5 +82,6 @@ function spotifyAuth(){
     request += "&show_dialog=true";
     request += "&scope=" + auth_data['SCOPE'];
     
-    window.open(request);
+    //window.open(request, "_self");
+    location.href = request;
 }
