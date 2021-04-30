@@ -4,41 +4,42 @@
    xmlns="http://www.w3.org/2000/svg"
    width="1500"
    height="1500"
-   viewBox="0 0 1500 1500"
+   viewBox="0 0 1242 1350"
    version="1.1"
-   id="svg8">
-    <style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
+   id="svg8"
+   >
+  <style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
 <rect width="100%" height="100%" style="fill:rgba(255,255,255,1)"></rect>
-<text transform="translate(431,393)" font-size="94" style="fill:rgb(0, 0, 0)">Charmer</text>
-<text transform="translate(1229,903) rotate(-90)" font-size="94" style="fill:rgb(157, 157, 157)">Bay Faction</text>
-<text transform="translate(688,321)" font-size="94" style="fill:rgb(125, 125, 125)">Wardruna</text>
-<text transform="translate(425,425)" font-size="41" style="fill:rgb(0, 0, 0)">Chappaqua Wrestling</text>
-<text transform="translate(1019,1130)" font-size="41" style="fill:rgb(0, 0, 0)">Eminem</text>
-<text transform="translate(238,1318)" font-size="41" style="fill:rgb(118, 118, 118)">Many Rooms</text>
-<text transform="translate(208,1181)" font-size="41" style="fill:rgb(0, 0, 0)">Movements</text>
-<text transform="translate(975,1036)" font-size="41" style="fill:rgb(19, 19, 19)">Moose Blood</text>
-<text transform="translate(116,1242)" font-size="41" style="fill:rgb(142, 142, 142)">Avenged Sevenfold</text>
-<text transform="translate(915,1076)" font-size="41" style="fill:rgb(29, 29, 29)">Rammstein</text>
-<text transform="translate(830,364)" font-size="41" style="fill:rgb(4, 4, 4)">softy</text>
-<text transform="translate(184,1352)" font-size="41" style="fill:rgb(93, 93, 93)">ENRA</text>
-<text transform="translate(475,1183) rotate(-90)" font-size="41" style="fill:rgb(99, 99, 99)">Trxxshed</text>
-<text transform="translate(888,1176)" font-size="41" style="fill:rgb(159, 159, 159)">brillion.</text>
-<text transform="translate(939,244)" font-size="41" style="fill:rgb(48, 48, 48)">less.people</text>
-<text transform="translate(447,465)" font-size="41" style="fill:rgb(0, 0, 0)">Dontcry</text>
-<text transform="translate(1270,660) rotate(-90)" font-size="41" style="fill:rgb(197, 197, 197)">Ky akasha</text>
-<text transform="translate(1002,355)" font-size="41" style="fill:rgb(91, 91, 91)">Yasumu</text>
-<text transform="translate(1019,962)" font-size="41" style="fill:rgb(0, 0, 0)">Laffey</text>
-<text transform="translate(263,1117)" font-size="41" style="fill:rgb(0, 0, 0)">Kupla</text>
-<text transform="translate(912,1210)" font-size="41" style="fill:rgb(168, 168, 168)">S N U G</text>
-<text transform="translate(321,1277)" font-size="41" style="fill:rgb(0, 0, 0)">Jhove</text>
-<text transform="translate(531,797) rotate(-90)" font-size="41" style="fill:rgb(194, 194, 194)">Mondo Loops</text>
-<text transform="translate(1073,199)" font-size="41" style="fill:rgb(0, 0, 0)">Towerz</text>
-<text transform="translate(484,839) rotate(-90)" font-size="41" style="fill:rgb(92, 92, 92)">Dillan Witherow</text>
-<text transform="translate(1145,1085)" font-size="41" style="fill:rgb(0, 0, 0)">Monma</text>
-<text transform="translate(537,1133) rotate(-90)" font-size="41" style="fill:rgb(204, 204, 204)">Nothingtosay</text>
-<text transform="translate(511,315)" font-size="41" style="fill:rgb(0, 0, 0)">Casiio</text>
-<text transform="translate(910,992)" font-size="41" style="fill:rgb(0, 0, 0)">50 Cent</text>
-<text transform="translate(1209,230)" font-size="41" style="fill:rgb(0, 0, 0)">WYS</text>
+<text transform="translate(596,306)" font-size="93" style="fill:rgb(141, 141, 141)">Charmer</text>
+<text transform="translate(423,1050) rotate(-90)" font-size="93" style="fill:rgb(201, 201, 201)">Bay Faction</text>
+<text transform="translate(1167,658) rotate(-90)" font-size="93" style="fill:rgb(62, 62, 62)">Wardruna</text>
+<text transform="translate(663,198)" font-size="47" style="fill:rgb(142, 142, 142)">Chappaqua Wrestling</text>
+<text transform="translate(626,363)" font-size="47" style="fill:rgb(134, 134, 134)">Eminem</text>
+<text transform="translate(101,1108)" font-size="47" style="fill:rgb(32, 32, 32)">Many Rooms</text>
+<text transform="translate(43,1176)" font-size="47" style="fill:rgb(92, 92, 92)">Movements</text>
+<text transform="translate(877,992)" font-size="47" style="fill:rgb(70, 70, 70)">Moose Blood</text>
+<text transform="translate(461,852) rotate(-90)" font-size="47" style="fill:rgb(119, 119, 119)">Avenged Sevenfold</text>
+<text transform="translate(1140,932) rotate(-90)" font-size="47" style="fill:rgb(66, 66, 66)">Rammstein</text>
+<text transform="translate(777,1078)" font-size="47" style="fill:rgb(78, 78, 78)">softy</text>
+<text transform="translate(1194,849) rotate(-90)" font-size="47" style="fill:rgb(111, 111, 111)">ENRA</text>
+<text transform="translate(70,1239)" font-size="47" style="fill:rgb(92, 92, 92)">Trxxshed</text>
+<text transform="translate(803,947)" font-size="47" style="fill:rgb(10, 10, 10)">brillion.</text>
+<text transform="translate(876,1031)" font-size="47" style="fill:rgb(101, 101, 101)">less.people</text>
+<text transform="translate(867,1130)" font-size="47" style="fill:rgb(146, 146, 146)">Dontcry</text>
+<text transform="translate(374,346)" font-size="46" style="fill:rgb(0, 0, 0)">Ky akasha</text>
+<text transform="translate(878,238)" font-size="46" style="fill:rgb(23, 23, 23)">Yasumu</text>
+<text transform="translate(402,267)" font-size="46" style="fill:rgb(0, 0, 0)">Laffey</text>
+<text transform="translate(175,1289)" font-size="46" style="fill:rgb(50, 50, 50)">Kupla</text>
+<text transform="translate(127,1058)" font-size="46" style="fill:rgb(0, 0, 0)">S N U G</text>
+<text transform="translate(893,890)" font-size="46" style="fill:rgb(0, 0, 0)">Jhove</text>
+<text transform="translate(921,142)" font-size="43" style="fill:rgb(42, 42, 42)">Mondo Loops</text>
+<text transform="translate(967,1093)" font-size="43" style="fill:rgb(58, 58, 58)">Towerz</text>
+<text transform="translate(704,331)" font-size="31" style="fill:rgb(177, 177, 177)">Dillan Witherow</text>
+<text transform="translate(372,1069)" font-size="31" style="fill:rgb(0, 0, 0)">Monma</text>
+<text transform="translate(254,1133)" font-size="31" style="fill:rgb(5, 5, 5)">Nothingtosay</text>
+<text transform="translate(358,1168)" font-size="31" style="fill:rgb(0, 0, 0)">Casiio</text>
+<text transform="translate(596,221)" font-size="31" style="fill:rgb(0, 0, 0)">50 Cent</text>
+<text transform="translate(765,1043)" font-size="31" style="fill:rgb(0, 0, 0)">WYS</text>
   <defs
      id="defs2" />
   <metadata
@@ -46,7 +47,7 @@
     </metadata>
   <path
      id="path953"
-     style="fill:none;stroke:#000000;stroke-width:11.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1289.832,104.08398 c -1.679,-0.006 -3.3539,0.16335 -4.998,0.50391 L 423.4043,283.16016 c -11.26975,2.33732 -19.34328,12.27559 -19.32227,23.78515 l 1.375,721.52149 c -26.18107,-3.2824 -66.74701,-6.0845 -110.58594,-0.088 -37.11133,5.0763 -76.97634,16.456 -112.02148,40.4063 -35.04514,23.9502 -64.62006,61.0312 -79.2832,112.9511 -15.281049,54.1079 -12.963974,98.8602 1.22851,134.1328 14.19249,35.2726 39.61682,59.8823 65.77735,76.2989 52.32104,32.8331 110.28515,36.2812 110.28515,36.2812 0.0768,0.01 0.15362,0.011 0.23047,0.016 0,0 28.33787,1.75 63.50977,-0.9902 35.1719,-2.7402 73.69355,-7.7269 111.08398,-30.1582 60.3526,-36.2067 94.05073,-74.016 113.69336,-108.3906 C 590.09535,1252.6652 594,1211.7905 594,1188.3262 V 540.8125 l 535.8789,-113.98828 1.2676,456.63281 c -57.8837,-5.22363 -188.76886,-2.94147 -276.08595,106.92774 -58.45677,73.55493 -53.47045,142.25633 -30.04297,186.58983 23.42747,44.3335 61.95898,67.668 61.95898,67.668 0.0247,0.016 0.0494,0.031 0.0742,0.047 0,0 49.47666,40.8419 131.09184,42.1113 35.2431,0.5482 76.1605,-5.5825 114.7168,-18.0117 38.5562,-12.4293 73.7827,-28.693 97.2441,-49.4473 38.4189,-33.986 80.267,-80.3991 88.0703,-161.5527 2.2677,-23.5839 2.5221,-88.02059 2.4551,-178.54301 -0.067,-90.52241 -0.8262,-204.13455 -1.8086,-315.41992 -1.9648,-222.57074 -4.8223,-435.82422 -4.8223,-435.82422 -0.179,-13.2313 -10.9336,-23.87546 -24.166,-23.91797 z"
-     transform="translate(-2.8571429,-2.8571429)" />
+     style="fill:none;stroke:#000000;stroke-width:11.169;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1205.2969,25.93376 c -1.679,-0.006 -3.3539,0.162446 -4.998,0.501121 L 338.86912,204.0186 c -11.26975,2.32439 -19.34328,12.20764 -19.32227,23.65348 l 1.375,717.52723 c -26.18107,-3.26423 -66.74701,-6.05081 -110.58594,-0.0875 -37.11133,5.0482 -76.97634,16.3649 -112.021487,40.18262 -35.04514,23.81757 -64.62006,60.69337 -79.2832,112.32577 -15.2810496,53.8084 -12.9639746,98.313 1.22851,133.3903 14.19249,35.0773 39.61682,59.5508 65.77735,75.8765 52.321047,32.6514 110.285157,36.0804 110.285157,36.0804 0.0768,0.01 0.15362,0.011 0.23047,0.016 0,0 28.33787,1.7403 63.50977,-0.9847 35.1719,-2.7251 79.47078,-14.4706 116.86121,-36.7777 60.3526,-36.0063 88.2735,-66.8198 107.91613,-101.0041 20.72035,-36.0602 24.625,-76.7086 24.625,-100.043 V 460.24461 l 535.87898,-113.35725 1.2676,454.10494 c -57.88378,-5.19471 -188.76894,-2.92519 -276.08603,106.3358 -58.45677,73.14774 -53.47045,141.4688 -30.04297,185.5569 23.42747,44.0881 61.95898,67.2934 61.95898,67.2934 0.0247,0.016 0.0494,0.031 0.0742,0.047 0,0 49.47666,40.6158 131.09184,41.8782 35.2431,0.5452 76.16058,-5.5516 114.71688,-17.912 38.5562,-12.3605 73.7827,-28.5341 97.2441,-49.1735 38.4189,-33.7979 80.267,-79.9541 88.0703,-160.65841 2.2677,-23.45334 2.5221,-87.53332 2.4551,-177.55462 -0.067,-90.02129 -0.8262,-203.00448 -1.8086,-313.67379 -1.9648,-221.33862 -4.8223,-433.411558 -4.8223,-433.411558 -0.179,-13.158053 -10.9336,-23.743288 -24.166,-23.785562 z"
+     />
 </svg>

@@ -85,7 +85,7 @@ def auth(request):
     top_genres = spotify.getTopGenres()
 
     # Generate word cloud from top artist/genres names
-    cloud.generateWordCloud(top_artists, "note", "artists")
+    cloud.generateWordCloud(top_artists, "n", "artists")
     cloud.generateWordCloud(top_genres, "s", "genres")
     
 
