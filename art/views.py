@@ -86,7 +86,7 @@ def auth(request):
 
     # Generate word cloud from top artist/genres names
     cloud.generateWordCloud(top_artists, "note", "artists")
-    cloud.generateWordCloud(top_genres, "single", "genres")
+    cloud.generateWordCloud(top_genres, "s", "genres")
     
 
 

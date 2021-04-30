@@ -19,9 +19,10 @@ def generateWordCloud(word_list, mask_name, out_name):
 
     # Word cloud generation - word frequency
     wc = WordCloud(
-        background_color='white',
+        background_color='rgba(255,255,255,1)', #F9F5F1
         mask=custom_mask,
-        color_func=img_colors
+        color_func=img_colors,
+        mode="RGBA"
     ).generate_from_frequencies(words)
 
     

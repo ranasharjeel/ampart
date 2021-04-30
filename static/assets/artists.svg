@@ -8,37 +8,37 @@
    version="1.1"
    id="svg8">
     <style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
-<rect width="100%" height="100%" style="fill:white"></rect>
-<text transform="translate(834,342)" font-size="93" style="fill:rgb(138, 138, 138)">Charmer</text>
-<text transform="translate(1249,1046) rotate(-90)" font-size="93" style="fill:rgb(166, 166, 166)">Bay Faction</text>
-<text transform="translate(481,416)" font-size="93" style="fill:rgb(9, 9, 9)">Wardruna</text>
-<text transform="translate(819,251)" font-size="41" style="fill:rgb(125, 125, 125)">Chappaqua Wrestling</text>
-<text transform="translate(946,1133)" font-size="41" style="fill:rgb(1, 1, 1)">Eminem</text>
-<text transform="translate(1017,1070)" font-size="41" style="fill:rgb(30, 30, 30)">Many Rooms</text>
-<text transform="translate(121,1293)" font-size="41" style="fill:rgb(168, 168, 168)">Movements</text>
-<text transform="translate(166,1232)" font-size="41" style="fill:rgb(90, 90, 90)">Moose Blood</text>
-<text transform="translate(144,1181)" font-size="41" style="fill:rgb(98, 98, 98)">Avenged Sevenfold</text>
-<text transform="translate(967,1195)" font-size="41" style="fill:rgb(150, 150, 150)">Rammstein</text>
-<text transform="translate(470,323)" font-size="41" style="fill:rgb(0, 0, 0)">softy</text>
-<text transform="translate(1058,1017)" font-size="41" style="fill:rgb(0, 0, 0)">ENRA</text>
-<text transform="translate(455,463)" font-size="41" style="fill:rgb(0, 0, 0)">Trxxshed</text>
-<text transform="translate(183,1326)" font-size="41" style="fill:rgb(143, 143, 143)">brillion.</text>
-<text transform="translate(288,1091)" font-size="41" style="fill:rgb(0, 0, 0)">less.people</text>
-<text transform="translate(663,312)" font-size="41" style="fill:rgb(0, 0, 0)">Dontcry</text>
-<text transform="translate(1041,375)" font-size="41" style="fill:rgb(176, 176, 176)">Ky akasha</text>
-<text transform="translate(1032,972)" font-size="41" style="fill:rgb(0, 0, 0)">Yasumu</text>
-<text transform="translate(358,1264)" font-size="41" style="fill:rgb(0, 0, 0)">Laffey</text>
-<text transform="translate(432,535)" font-size="41" style="fill:rgb(0, 0, 0)">Kupla</text>
-<text transform="translate(265,1137)" font-size="41" style="fill:rgb(0, 0, 0)">S N U G</text>
-<text transform="translate(427,901)" font-size="41" style="fill:rgb(0, 0, 0)">Jhove</text>
-<text transform="translate(513,841) rotate(-90)" font-size="41" style="fill:rgb(177, 177, 177)">Mondo Loops</text>
-<text transform="translate(1098,207)" font-size="41" style="fill:rgb(0, 0, 0)">Towerz</text>
-<text transform="translate(163,1352)" font-size="33" style="fill:rgb(188, 188, 188)">Dillan Witherow</text>
-<text transform="translate(928,985)" font-size="33" style="fill:rgb(0, 0, 0)">Monma</text>
-<text transform="translate(459,838) rotate(-90)" font-size="33" style="fill:rgb(115, 115, 115)">Nothingtosay</text>
-<text transform="translate(1102,1150)" font-size="33" style="fill:rgb(2, 2, 2)">Casiio</text>
-<text transform="translate(971,1230)" font-size="33" style="fill:rgb(165, 165, 165)">50 Cent</text>
-<text transform="translate(436,972)" font-size="33" style="fill:rgb(0, 0, 0)">WYS</text>
+<rect width="100%" height="100%" style="fill:rgba(255,255,255,1)"></rect>
+<text transform="translate(431,393)" font-size="94" style="fill:rgb(0, 0, 0)">Charmer</text>
+<text transform="translate(1229,903) rotate(-90)" font-size="94" style="fill:rgb(157, 157, 157)">Bay Faction</text>
+<text transform="translate(688,321)" font-size="94" style="fill:rgb(125, 125, 125)">Wardruna</text>
+<text transform="translate(425,425)" font-size="41" style="fill:rgb(0, 0, 0)">Chappaqua Wrestling</text>
+<text transform="translate(1019,1130)" font-size="41" style="fill:rgb(0, 0, 0)">Eminem</text>
+<text transform="translate(238,1318)" font-size="41" style="fill:rgb(118, 118, 118)">Many Rooms</text>
+<text transform="translate(208,1181)" font-size="41" style="fill:rgb(0, 0, 0)">Movements</text>
+<text transform="translate(975,1036)" font-size="41" style="fill:rgb(19, 19, 19)">Moose Blood</text>
+<text transform="translate(116,1242)" font-size="41" style="fill:rgb(142, 142, 142)">Avenged Sevenfold</text>
+<text transform="translate(915,1076)" font-size="41" style="fill:rgb(29, 29, 29)">Rammstein</text>
+<text transform="translate(830,364)" font-size="41" style="fill:rgb(4, 4, 4)">softy</text>
+<text transform="translate(184,1352)" font-size="41" style="fill:rgb(93, 93, 93)">ENRA</text>
+<text transform="translate(475,1183) rotate(-90)" font-size="41" style="fill:rgb(99, 99, 99)">Trxxshed</text>
+<text transform="translate(888,1176)" font-size="41" style="fill:rgb(159, 159, 159)">brillion.</text>
+<text transform="translate(939,244)" font-size="41" style="fill:rgb(48, 48, 48)">less.people</text>
+<text transform="translate(447,465)" font-size="41" style="fill:rgb(0, 0, 0)">Dontcry</text>
+<text transform="translate(1270,660) rotate(-90)" font-size="41" style="fill:rgb(197, 197, 197)">Ky akasha</text>
+<text transform="translate(1002,355)" font-size="41" style="fill:rgb(91, 91, 91)">Yasumu</text>
+<text transform="translate(1019,962)" font-size="41" style="fill:rgb(0, 0, 0)">Laffey</text>
+<text transform="translate(263,1117)" font-size="41" style="fill:rgb(0, 0, 0)">Kupla</text>
+<text transform="translate(912,1210)" font-size="41" style="fill:rgb(168, 168, 168)">S N U G</text>
+<text transform="translate(321,1277)" font-size="41" style="fill:rgb(0, 0, 0)">Jhove</text>
+<text transform="translate(531,797) rotate(-90)" font-size="41" style="fill:rgb(194, 194, 194)">Mondo Loops</text>
+<text transform="translate(1073,199)" font-size="41" style="fill:rgb(0, 0, 0)">Towerz</text>
+<text transform="translate(484,839) rotate(-90)" font-size="41" style="fill:rgb(92, 92, 92)">Dillan Witherow</text>
+<text transform="translate(1145,1085)" font-size="41" style="fill:rgb(0, 0, 0)">Monma</text>
+<text transform="translate(537,1133) rotate(-90)" font-size="41" style="fill:rgb(204, 204, 204)">Nothingtosay</text>
+<text transform="translate(511,315)" font-size="41" style="fill:rgb(0, 0, 0)">Casiio</text>
+<text transform="translate(910,992)" font-size="41" style="fill:rgb(0, 0, 0)">50 Cent</text>
+<text transform="translate(1209,230)" font-size="41" style="fill:rgb(0, 0, 0)">WYS</text>
   <defs
      id="defs2" />
   <metadata
