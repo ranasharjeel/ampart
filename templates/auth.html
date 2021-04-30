@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authorization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'index/main.css' %}"/>
 </head>
-<body>
-    <h1>{{status}}</h1>
-    <h1 id="auth" value="{{status}}"></h1>
+<body id="auth" value="{{status}}">
+    <header>
+        <!-- Logo -->
+        <span class="ghost">Test</span>
+        <div class="logo">
+            <h1>Ampart</h1>
+        </div>
 
+        <!-- Mobile menu -->
+        <div id="ham" class="ham-menu">
+            <img id="ham-img" src="{% static 'site-assets/ham-menu.svg' %}" alt="">
+        </div>
+
+        <!-- Desktop menu -->
+        <div id="mainmenu" class="main-menu">
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main2">
+        <img src="{% static 'assets/genres.svg' %}" width="600px" height="600px"/>
+        <img src="{% static 'assets/artists.svg' %}" width="600px" height="600px"/>
+
+    </div>
+    
+    
     <script>
         
         status = document.getElementById("auth").getAttribute("value");

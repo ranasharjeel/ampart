@@ -82,6 +82,6 @@ function spotifyAuth(){
     request += "&show_dialog=true";
     request += "&scope=" + auth_data['SCOPE'];
     
-    //window.open(request, "_self");
+    
     location.href = request;
 }

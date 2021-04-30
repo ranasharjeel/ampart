@@ -80,15 +80,14 @@ def auth(request):
         
 
 
-    '''
-    # TEMP - Testing out web API queries
+    # Generate and save artists and genres cloud arts
     top_artists = spotify.getTopArtists()
     top_genres = spotify.getTopGenres()
 
     # Generate word cloud from top artist/genres names
     cloud.generateWordCloud(top_artists, "note", "artists")
     cloud.generateWordCloud(top_genres, "single", "genres")
-    '''
+    
 
 
     return render(request, 'auth.html', {'status' : r.status_code})

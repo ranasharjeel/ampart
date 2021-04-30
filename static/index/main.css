@@ -160,6 +160,18 @@ visibility: hidden;
 /* MAIN CONTENT */
 /* ======================================== */
 
+.main2{
+  background-color: var(--lightbg);
+  flex-grow: 1;
+  margin-bottom: 5vh;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .main{
 background-color: var(--lightbg);
 flex-grow: 1;
