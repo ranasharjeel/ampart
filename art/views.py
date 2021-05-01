@@ -11,6 +11,7 @@ from . import errors, spotify, cloud
 CLIENT_ID = os.environ.get('AMPART_CLIENT_ID')
 CLIENT_SECRET = os.environ.get('AMPART_CLIENT_SECRET')
 REDIRECT_URI = "http://127.0.0.1:8000/art/auth"
+#REDIRECT_URI = "http://192.168.10.28:8000/art/auth"
 SCOPE = "user-library-read user-top-read"
 
 
