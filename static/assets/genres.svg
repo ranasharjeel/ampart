@@ -10,40 +10,36 @@
    >
   <style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
 <rect width="100%" height="100%" style="fill:rgba(255,255,255,1)"></rect>
-<text transform="translate(107,959)" font-size="62" style="fill:rgb(81, 81, 81)">lo-fi beats</text>
-<text transform="translate(131,896)" font-size="39" style="fill:rgb(58, 58, 58)">alternative emo</text>
-<text transform="translate(148,1113)" font-size="34" style="fill:rgb(144, 144, 144)">anthem emo</text>
-<text transform="translate(481,897)" font-size="34" style="fill:rgb(0, 0, 0)">emo</text>
-<text transform="translate(648,219)" font-size="28" style="fill:rgb(68, 68, 68)">pop punk</text>
-<text transform="translate(242,1166)" font-size="28" style="fill:rgb(122, 122, 122)">hip hop</text>
-<text transform="translate(645,129)" font-size="28" style="fill:rgb(0, 0, 0)">rap</text>
-<text transform="translate(546,832) rotate(-90)" font-size="28" style="fill:rgb(160, 160, 160)">alternative metal</text>
-<text transform="translate(387,819)" font-size="28" style="fill:rgb(0, 0, 0)">nu metal</text>
-<text transform="translate(154,1065)" font-size="21" style="fill:rgb(87, 87, 87)">bubblegrunge</text>
-<text transform="translate(305,726)" font-size="21" style="fill:rgb(0, 0, 0)">diy emo</text>
-<text transform="translate(101,796)" font-size="21" style="fill:rgb(0, 0, 0)">indie punk</text>
-<text transform="translate(317,1050)" font-size="21" style="fill:rgb(0, 0, 0)">nordic folk</text>
-<text transform="translate(785,344)" font-size="21" style="fill:rgb(119, 119, 119)">rune folk</text>
-<text transform="translate(292,762)" font-size="21" style="fill:rgb(0, 0, 0)">viking folk</text>
-<text transform="translate(237,982)" font-size="21" style="fill:rgb(10, 10, 10)">english indie rock</text>
-<text transform="translate(101,848)" font-size="21" style="fill:rgb(0, 0, 0)">manchester indie</text>
-<text transform="translate(166,1016)" font-size="21" style="fill:rgb(45, 45, 45)">detroit hip hop</text>
-<text transform="translate(356,785)" font-size="21" style="fill:rgb(0, 0, 0)">houston indie</text>
-<text transform="translate(379,1086)" font-size="21" style="fill:rgb(49, 49, 49)">midwest emo</text>
-<text transform="translate(590,786) rotate(-90)" font-size="21" style="fill:rgb(184, 184, 184)">socal pop punk</text>
-<text transform="translate(609,368) rotate(-90)" font-size="21" style="fill:rgb(2, 2, 2)">kent indie</text>
-<text transform="translate(186,1132)" font-size="21" style="fill:rgb(139, 139, 139)">modern alternative rock</text>
-<text transform="translate(613,177)" font-size="21" style="fill:rgb(0, 0, 0)">german metal</text>
-<text transform="translate(623,571) rotate(-90)" font-size="21" style="fill:rgb(179, 179, 179)">industrial</text>
-<text transform="translate(73,824)" font-size="21" style="fill:rgb(0, 0, 0)">industrial metal</text>
-<text transform="translate(361,1007)" font-size="21" style="fill:rgb(0, 0, 0)">industrial rock</text>
-<text transform="translate(303,856)" font-size="21" style="fill:rgb(0, 0, 0)">neue deutsche harte</text>
-<text transform="translate(611,249)" font-size="21" style="fill:rgb(0, 0, 0)">japanese chillhop</text>
-<text transform="translate(784,309)" font-size="21" style="fill:rgb(14, 14, 14)">chillhop</text>
-<text transform="translate(74,1037)" font-size="21" style="fill:rgb(195, 195, 195)">east coast hip hop</text>
-<text transform="translate(115,764)" font-size="21" style="fill:rgb(0, 0, 0)">gangster rap</text>
-<text transform="translate(559,87)" font-size="21" style="fill:rgb(1, 1, 1)">pop rap</text>
-<text transform="translate(218,699)" font-size="21" style="fill:rgb(0, 0, 0)">queens hip hop</text>
+<text transform="translate(64,984)" font-size="62" style="fill:rgb(131, 131, 131)">lo-fi beats</text>
+<text transform="translate(571,862) rotate(-90)" font-size="40" style="fill:rgb(187, 187, 187)">alternative emo</text>
+<text transform="translate(316,877)" font-size="35" style="fill:rgb(0, 0, 0)">anthem emo</text>
+<text transform="translate(592,312)" font-size="35" style="fill:rgb(0, 0, 0)">emo</text>
+<text transform="translate(356,835)" font-size="29" style="fill:rgb(0, 0, 0)">pop punk</text>
+<text transform="translate(242,1089)" font-size="29" style="fill:rgb(6, 6, 6)">hip hop</text>
+<text transform="translate(726,243)" font-size="29" style="fill:rgb(0, 0, 0)">rap</text>
+<text transform="translate(165,1137)" font-size="29" style="fill:rgb(160, 160, 160)">alternative metal</text>
+<text transform="translate(245,1045)" font-size="29" style="fill:rgb(0, 0, 0)">nu metal</text>
+<text transform="translate(539,610) rotate(-90)" font-size="22" style="fill:rgb(60, 60, 60)">bubblegrunge</text>
+<text transform="translate(819,391) rotate(-90)" font-size="22" style="fill:rgb(0, 0, 0)">diy emo</text>
+<text transform="translate(73,1004)" font-size="22" style="fill:rgb(100, 100, 100)">indie punk</text>
+<text transform="translate(254,1010)" font-size="22" style="fill:rgb(40, 40, 40)">english indie rock</text>
+<text transform="translate(363,926)" font-size="22" style="fill:rgb(0, 0, 0)">manchester indie</text>
+<text transform="translate(132,805)" font-size="22" style="fill:rgb(0, 0, 0)">detroit hip hop</text>
+<text transform="translate(264,760)" font-size="22" style="fill:rgb(0, 0, 0)">midwest emo</text>
+<text transform="translate(592,202)" font-size="22" style="fill:rgb(0, 0, 0)">socal pop punk</text>
+<text transform="translate(274,710)" font-size="22" style="fill:rgb(0, 0, 0)">kent indie</text>
+<text transform="translate(280,903)" font-size="22" style="fill:rgb(0, 0, 0)">modern alternative rock</text>
+<text transform="translate(276,1155)" font-size="22" style="fill:rgb(98, 98, 98)">german metal</text>
+<text transform="translate(176,865)" font-size="22" style="fill:rgb(0, 0, 0)">industrial</text>
+<text transform="translate(65,911)" font-size="22" style="fill:rgb(67, 67, 67)">industrial metal</text>
+<text transform="translate(342,806)" font-size="22" style="fill:rgb(0, 0, 0)">industrial rock</text>
+<text transform="translate(583,369) rotate(-90)" font-size="22" style="fill:rgb(85, 85, 85)">neue deutsche harte</text>
+<text transform="translate(69,828)" font-size="22" style="fill:rgb(0, 0, 0)">japanese chillhop</text>
+<text transform="translate(391,1038)" font-size="22" style="fill:rgb(0, 0, 0)">chillhop</text>
+<text transform="translate(247,732)" font-size="22" style="fill:rgb(0, 0, 0)">east coast hip hop</text>
+<text transform="translate(374,1064)" font-size="22" style="fill:rgb(37, 37, 37)">gangster rap</text>
+<text transform="translate(614,123)" font-size="22" style="fill:rgb(0, 0, 0)">pop rap</text>
+<text transform="translate(54,883)" font-size="22" style="fill:rgb(28, 28, 28)">queens hip hop</text>
   <defs
      id="defs1056" />
   <metadata
