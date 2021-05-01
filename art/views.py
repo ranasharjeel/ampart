@@ -2,9 +2,6 @@ import os, json, requests
 from django.shortcuts import render, redirect, reverse
 from . import errors, spotify, cloud
 
-'''
-    ----Views----
-'''
 
 
 # Data required for authorization if user wants to login

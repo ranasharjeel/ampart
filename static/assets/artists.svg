@@ -10,33 +10,34 @@
    >
   <style>text{font-family:'Droid Sans Mono';font-weight:normal;font-style:normal;}</style>
 <rect width="100%" height="100%" style="fill:rgba(255,255,255,0)"></rect>
-<text transform="translate(752,240)" font-size="73" style="fill:rgb(94, 94, 94)">Charmer</text>
-<text transform="translate(440,1129) rotate(-90)" font-size="73" style="fill:rgb(36, 36, 36)">Chappaqua Wrestling</text>
-<text transform="translate(903,1068)" font-size="73" style="fill:rgb(89, 89, 89)">Eminem</text>
-<text transform="translate(564,298)" font-size="73" style="fill:rgb(144, 144, 144)">Movements</text>
-<text transform="translate(1163,591) rotate(-90)" font-size="73" style="fill:rgb(67, 67, 67)">Moose Blood</text>
-<text transform="translate(32,1182)" font-size="64" style="fill:rgb(87, 87, 87)">Bay Faction</text>
-<text transform="translate(462,333)" font-size="44" style="fill:rgb(112, 112, 112)">Avenged Sevenfold</text>
-<text transform="translate(829,1144)" font-size="44" style="fill:rgb(195, 195, 195)">Rammstein</text>
-<text transform="translate(975,982)" font-size="44" style="fill:rgb(0, 0, 0)">softy</text>
-<text transform="translate(176,1263)" font-size="44" style="fill:rgb(17, 17, 17)">ENRA</text>
-<text transform="translate(473,379)" font-size="44" style="fill:rgb(116, 116, 116)">Trxxshed</text>
-<text transform="translate(847,167)" font-size="44" style="fill:rgb(10, 10, 10)">brillion.</text>
-<text transform="translate(873,906)" font-size="44" style="fill:rgb(0, 0, 0)">less.people</text>
-<text transform="translate(355,276)" font-size="44" style="fill:rgb(0, 0, 0)">Dontcry</text>
-<text transform="translate(158,1041)" font-size="44" style="fill:rgb(0, 0, 0)">Ky akasha</text>
-<text transform="translate(164,1120)" font-size="44" style="fill:rgb(0, 0, 0)">Yasumu</text>
-<text transform="translate(801,975)" font-size="44" style="fill:rgb(0, 0, 0)">Laffey</text>
-<text transform="translate(773,1087)" font-size="44" style="fill:rgb(98, 98, 98)">Kupla</text>
-<text transform="translate(188,1218)" font-size="44" style="fill:rgb(28, 28, 28)">S N U G</text>
-<text transform="translate(379,1006) rotate(-90)" font-size="44" style="fill:rgb(136, 136, 136)">Mondo Loops</text>
-<text transform="translate(1125,804) rotate(-90)" font-size="44" style="fill:rgb(61, 61, 61)">Towerz</text>
-<text transform="translate(1197,669) rotate(-90)" font-size="44" style="fill:rgb(116, 116, 116)">Dillan Witherow</text>
-<text transform="translate(44,1236)" font-size="44" style="fill:rgb(121, 121, 121)">Monma</text>
-<text transform="translate(479,228)" font-size="38" style="fill:rgb(32, 32, 32)">Nothingtosay</text>
-<text transform="translate(969,271)" font-size="38" style="fill:rgb(76, 76, 76)">Casiio</text>
-<text transform="translate(937,865)" font-size="38" style="fill:rgb(0, 0, 0)">50 Cent</text>
-<text transform="translate(759,1012)" font-size="38" style="fill:rgb(0, 0, 0)">WYS</text>
+<text transform="translate(562,294)" font-size="73" style="fill:rgb(106, 106, 106)">Charmer</text>
+<text transform="translate(1152,976) rotate(-90)" font-size="73" style="fill:rgb(62, 62, 62)">Chappaqua Wrestling</text>
+<text transform="translate(798,221)" font-size="73" style="fill:rgb(57, 57, 57)">Eminem</text>
+<text transform="translate(57,1159)" font-size="73" style="fill:rgb(57, 57, 57)">Movements</text>
+<text transform="translate(422,861) rotate(-90)" font-size="73" style="fill:rgb(122, 122, 122)">Moose Blood</text>
+<text transform="translate(345,348)" font-size="68" style="fill:rgb(0, 0, 0)">Bay Faction</text>
+<text transform="translate(752,1033)" font-size="42" style="fill:rgb(176, 176, 176)">Avenged Sevenfold</text>
+<text transform="translate(87,1277)" font-size="42" style="fill:rgb(108, 108, 108)">Rammstein</text>
+<text transform="translate(613,204)" font-size="42" style="fill:rgb(0, 0, 0)">softy</text>
+<text transform="translate(849,155)" font-size="42" style="fill:rgb(0, 0, 0)">ENRA</text>
+<text transform="translate(885,1083)" font-size="42" style="fill:rgb(90, 90, 90)">Trxxshed</text>
+<text transform="translate(180,1052)" font-size="42" style="fill:rgb(0, 0, 0)">brillion.</text>
+<text transform="translate(139,1208)" font-size="42" style="fill:rgb(35, 35, 35)">less.people</text>
+<text transform="translate(881,1117)" font-size="42" style="fill:rgb(117, 117, 117)">Dontcry</text>
+<text transform="translate(861,953)" font-size="42" style="fill:rgb(0, 0, 0)">Ky akasha</text>
+<text transform="translate(260,1094)" font-size="42" style="fill:rgb(0, 0, 0)">Yasumu</text>
+<text transform="translate(342,259)" font-size="42" style="fill:rgb(0, 0, 0)">Laffey</text>
+<text transform="translate(883,284)" font-size="42" style="fill:rgb(48, 48, 48)">Kupla</text>
+<text transform="translate(1101,913) rotate(-90)" font-size="42" style="fill:rgb(53, 53, 53)">S N U G</text>
+<text transform="translate(456,959) rotate(-90)" font-size="42" style="fill:rgb(202, 202, 202)">Mondo Loops</text>
+<text transform="translate(471,580) rotate(-90)" font-size="42" style="fill:rgb(172, 172, 172)">Towerz</text>
+<text transform="translate(1194,609) rotate(-90)" font-size="42" style="fill:rgb(113, 113, 113)">Dillan Witherow</text>
+<text transform="translate(983,157)" font-size="42" style="fill:rgb(0, 0, 0)">Monma</text>
+<text transform="translate(455,376)" font-size="36" style="fill:rgb(65, 65, 65)">Nothingtosay</text>
+<text transform="translate(1047,119)" font-size="36" style="fill:rgb(0, 0, 0)">Casiio</text>
+<text transform="translate(844,992)" font-size="36" style="fill:rgb(34, 34, 34)">Alan Walker</text>
+<text transform="translate(860,906)" font-size="36" style="fill:rgb(0, 0, 0)">50 Cent</text>
+<text transform="translate(409,994)" font-size="36" style="fill:rgb(0, 0, 0)">WYS</text>
   <defs
      id="defs2" />
   <metadata
