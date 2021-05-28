@@ -144,6 +144,13 @@ z-index: 99;
 background-color: #1D1D1D;
 }
 
+.main-menu, .back-drop {
+    opacity: 0;
+    
+    animation: 0.5s ease-out 0s 1 fadeInTitle forwards;
+}
+
+
 .ghost{
 visibility: hidden;
 }
